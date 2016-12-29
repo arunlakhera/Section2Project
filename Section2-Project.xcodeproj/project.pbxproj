@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		D83931E11E124B8C0016DC3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83931E01E124B8C0016DC3E /* AppDelegate.swift */; };
-		D83931E31E124B8C0016DC3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83931E21E124B8C0016DC3E /* ViewController.swift */; };
+		D83931E31E124B8C0016DC3E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83931E21E124B8C0016DC3E /* LoginVC.swift */; };
 		D83931E61E124B8C0016DC3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83931E41E124B8C0016DC3E /* Main.storyboard */; };
 		D83931E81E124B8D0016DC3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83931E71E124B8D0016DC3E /* Assets.xcassets */; };
 		D83931EB1E124B8D0016DC3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83931E91E124B8D0016DC3E /* LaunchScreen.storyboard */; };
+		D8AB94A91E12B88800D6076F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB94A81E12B88800D6076F /* HomeVC.swift */; };
+		D8AB94AB1E13863900D6076F /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB94AA1E13863900D6076F /* MyCustomCell.swift */; };
+		D8AB94AF1E13A9C100D6076F /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB94AE1E13A9C100D6076F /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D83931DD1E124B8C0016DC3E /* Section2-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Section2-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D83931E01E124B8C0016DC3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D83931E21E124B8C0016DC3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D83931E21E124B8C0016DC3E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		D83931E51E124B8C0016DC3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D83931E71E124B8D0016DC3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D83931EA1E124B8D0016DC3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D83931EC1E124B8D0016DC3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8AB94A81E12B88800D6076F /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D8AB94AA1E13863900D6076F /* MyCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		D8AB94AE1E13A9C100D6076F /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,33 @@
 		D83931DF1E124B8C0016DC3E /* Section2-Project */ = {
 			isa = PBXGroup;
 			children = (
+				D8AB94AD1E13A95E00D6076F /* Controller */,
+				D8AB94AC1E13A95400D6076F /* Model */,
 				D83931E01E124B8C0016DC3E /* AppDelegate.swift */,
-				D83931E21E124B8C0016DC3E /* ViewController.swift */,
+				D83931E21E124B8C0016DC3E /* LoginVC.swift */,
 				D83931E41E124B8C0016DC3E /* Main.storyboard */,
 				D83931E71E124B8D0016DC3E /* Assets.xcassets */,
 				D83931E91E124B8D0016DC3E /* LaunchScreen.storyboard */,
 				D83931EC1E124B8D0016DC3E /* Info.plist */,
 			);
 			path = "Section2-Project";
+			sourceTree = "<group>";
+		};
+		D8AB94AC1E13A95400D6076F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8AB94AA1E13863900D6076F /* MyCustomCell.swift */,
+				D8AB94AE1E13A9C100D6076F /* PostData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D8AB94AD1E13A95E00D6076F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8AB94A81E12B88800D6076F /* HomeVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,7 +116,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Arun Lakhera";
 				TargetAttributes = {
 					D83931DC1E124B8C0016DC3E = {
@@ -137,7 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D83931E31E124B8C0016DC3E /* ViewController.swift in Sources */,
+				D8AB94AF1E13A9C100D6076F /* PostData.swift in Sources */,
+				D8AB94A91E12B88800D6076F /* HomeVC.swift in Sources */,
+				D83931E31E124B8C0016DC3E /* LoginVC.swift in Sources */,
+				D8AB94AB1E13863900D6076F /* MyCustomCell.swift in Sources */,
 				D83931E11E124B8C0016DC3E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +210,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -232,6 +261,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -302,6 +332,7 @@
 				D83931F11E124B8D0016DC3E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
